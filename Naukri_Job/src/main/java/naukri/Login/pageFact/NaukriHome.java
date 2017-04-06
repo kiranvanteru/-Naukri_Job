@@ -1,0 +1,34 @@
+package naukri.Login.pageFact;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class NaukriHome {
+	WebDriver driver;
+	public NaukriHome(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	@FindBy (xpath="//button//div//b[text()='View and Update Profile']")
+	WebElement ViewUpdateProfile;
+	
+	
+	
+	@FindBy(how=How.XPATH, using="//h1//a[text()='Edit']")
+	WebElement ProfileEdit;
+	
+	@FindBy(how=How.XPATH, using="//button[@type='submit']")
+	WebElement ProfileSave;
+	
+	public void MyHomePage(){
+		ViewUpdateProfile.click();
+		ProfileEdit.click();
+		ProfileSave.click();
+	} 
+	
+	
+	
+
+}
