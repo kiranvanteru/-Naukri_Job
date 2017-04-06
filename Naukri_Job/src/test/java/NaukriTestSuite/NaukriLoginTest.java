@@ -38,8 +38,6 @@ public class NaukriLoginTest {
 	  Nlg.LoginNaukriHome("kiranv23", "kiran1234");
 	  mnp.MyHomePage();
 	  
-	  
-	  
 	  driver.quit();
 	  
 	  
