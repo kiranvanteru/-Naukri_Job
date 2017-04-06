@@ -23,7 +23,6 @@ public class NaukriLoginTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://www.naukri.com/");
-		System.out.println("Sending to git");
 	  }
 	
 	
